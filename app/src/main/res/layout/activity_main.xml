@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    app:srcCompat="@drawable/ellipsis_message" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="主页"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="防护设置"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    app:srcCompat="@drawable/person" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="5">
+
+            <com.example.omniguardai.MsgButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bs"
+                android:paddingLeft="20dp"
+                android:paddingBottom="40dp"
+                app:exampleDimension="24sp"
+                app:exampleDrawable="@android:drawable/ic_menu_add"
+                app:exampleString="" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight=".5"
+            android:text="守护记录"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="3"
+            android:background="#ffffff">
+
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="25dp"
+                android:text="13"
+                android:textColor="#0000ff"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="30dp"
+                android:text="次"
+                android:textColor="#0000ff"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCallIntercept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="30dp"
+                android:text="通话拦截"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+
+            <FrameLayout
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="80dp"
+                android:layout_marginBottom="28dp">
+
+
+                <ImageView
+                    android:id="@+id/image_right2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    app:srcCompat="@drawable/chevron_right" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="25dp"
+                android:text="27"
+                android:textColor="#0000ff"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="175dp"
+                android:layout_marginTop="30dp"
+                android:text="条"
+                android:textColor="#0000ff"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvMsgIntercept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="130dp"
+                android:layout_marginBottom="30dp"
+                android:text="短信拦截"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+
+            <FrameLayout
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="300dp"
+                android:layout_marginBottom="28dp">
+
+
+                <ImageView
+                    android:id="@+id/image_right3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    app:srcCompat="@drawable/chevron_right" />
+            </FrameLayout>
+
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="25dp"
+                android:text="5"
+                android:textColor="#0000ff"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="30dp"
+                android:text="次"
+                android:textColor="#0000ff"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTakeOver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="240dp"
+                android:layout_marginBottom="30dp"
+                android:text="接管次数"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+
+            <FrameLayout
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="190dp"
+                android:layout_marginBottom="28dp">
+
+
+                <ImageView
+                    android:id="@+id/image_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    app:srcCompat="@drawable/chevron_right" />
+            </FrameLayout>
+
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight=".5"
+            android:text="在线分析"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2">
+
+            <com.example.omniguardai.MsgButton
+                android:id="@+id/msgButton1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/b1"
+                android:paddingLeft="20dp"
+                android:paddingBottom="40dp"
+                app:exampleDimension="24sp"
+                app:exampleDrawable="@android:drawable/ic_menu_add"
+                app:exampleString="风险内容识别 智能识别各类风险信息" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2">
+
+            <com.example.omniguardai.MsgButton
+                android:id="@+id/msgButton2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/b2"
+                android:paddingLeft="20dp"
+                android:paddingBottom="40dp"
+                app:exampleDimension="24sp"
+                app:exampleDrawable="@android:drawable/ic_menu_add"
+                app:exampleString="语音分析 分析真假人声，谨防冒充亲友" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2">
+
+            <com.example.omniguardai.MsgButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/b3"
+                android:paddingLeft="20dp"
+                android:paddingBottom="40dp"
+                app:exampleDimension="24sp"
+                app:exampleDrawable="@android:drawable/ic_menu_add"
+                app:exampleString="视频分析 智能甄别AI合成视频，防范身份冒用" />
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
